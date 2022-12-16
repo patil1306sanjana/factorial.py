@@ -13,3 +13,14 @@ for i in range(n,0,-1):
    result = result * i
 
 print("factorial of",n,"is",result)
+
+#way 3 using function
+def factorial(x):
+
+    if x==1:
+       return 1
+    else:
+       return(x * factorial(x-1))
+print("enter the no:")
+num = int(input())
+print("the factorial of",num,"is",factorial(num))
